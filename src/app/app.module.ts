@@ -16,7 +16,8 @@ import { MatCardModule } from '@angular/material/card';
 import { ProductCrudComponent } from './views/product-crud/product-crud.component';
 import { ProductReadComponent } from './component/product/product-read/product-read.component';
 import { MatSnackBarModule } from '@angular/material/snack-bar'
-import { HttpClient } from '@angular/common/http'
+import { HttpClient } from '@angular/common/http';
+import { SupplierReadComponent } from './component/supplier/supplier-read/supplier-read.component';
 
  
 @NgModule({
@@ -27,7 +28,8 @@ import { HttpClient } from '@angular/common/http'
     FooterComponent,
     HomeComponent,
     ProductCrudComponent,
-    ProductReadComponent
+    ProductReadComponent,
+    SupplierReadComponent,
 
   ],
   imports: [
