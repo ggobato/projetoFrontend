@@ -16,8 +16,13 @@ import { MatCardModule } from '@angular/material/card';
 import { ProductCrudComponent } from './views/product-crud/product-crud.component';
 import { ProductReadComponent } from './component/product/product-read/product-read.component';
 import { MatSnackBarModule } from '@angular/material/snack-bar'
-import { HttpClient } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { SupplierReadComponent } from './component/supplier/supplier-read/supplier-read.component';
+import { ProductCreateComponent } from './component/product/product-create/product-create.component';
+import { MatFormFieldModule } from '@angular/material/form-field'
+import { MatInputModule } from '@angular/material/input'
+import { FormsModule } from '@angular/forms';
+
 
  
 @NgModule({
@@ -30,6 +35,7 @@ import { SupplierReadComponent } from './component/supplier/supplier-read/suppli
     ProductCrudComponent,
     ProductReadComponent,
     SupplierReadComponent,
+    ProductCreateComponent,
 
   ],
   imports: [
@@ -41,6 +47,10 @@ import { SupplierReadComponent } from './component/supplier/supplier-read/suppli
     MatListModule,
     MatCardModule,
     MatSnackBarModule,
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
